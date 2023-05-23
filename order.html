@@ -7,7 +7,7 @@
     <title>Carvbot</title>
     <link rel="stylesheet" href="input.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <script src=""></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -15,14 +15,14 @@
         <div class="card">
             <h1>Order Now</h1>
             <div class="card-inner">
-                <form action="https://formsubmit.co/kaelelago@gmail.com" method="POST">
+                <form>
                      <div class="input-name">
-                        <label for="name">Email:</label>
+                        <label for="name">Name:</label>
                     </div>
-                    <input type="email" id="name" name="email" placeholder="Email" required>
+                    <input type="text" id="name" name="name" placeholder="Name">
 
-                    <div class="input-name">Message:</div>
-                    <input type="text" name="message" placeholder="Messege here" required>
+                    <div class="input-name">Contact Number:</div>
+                    <input type="text" placeholder="Contact Number">
 
                     <div class="input-name">Address:</div>
                     <input type="text" placeholder="Address">
@@ -37,7 +37,7 @@
                     <input type="text" placeholder="Font Number">
                 </form>
 
-                <button  onclick="showNotificationAndRedirect()" onclick="redirectToChat()" class="submit"  type="submit">submit
+                <button  onclick="showNotificationAndRedirect()" onclick="redirectToChat()" class="submit"  type="submit">
                     <div class="svg-wrapper-1">
                         <div class="svg-wrapper">
                             <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
