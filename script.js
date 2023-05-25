@@ -13,7 +13,7 @@ window.history.back();
 function showNotificationAndRedirect() {
     var name = document.getElementById('name').value;
     alert('Thank you for submitting the form, ' + name + '!');
-    goToPage('submit.html');
+    goToPage('submit');
 }
 
 // go to main page if reloaded
