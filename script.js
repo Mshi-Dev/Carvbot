@@ -28,13 +28,15 @@ function goToPage(pageId) {
 
 //loading screen
 document.addEventListener("DOMContentLoaded", function () {
-    var loadingScreen = document.getElementById("loading-screen");
+  var loadingScreen = document.getElementById("loading-screen");
+  var content = document.getElementById("content");
 
-    // Show loading screen initially
-    loadingScreen.style.display = "flex";
+  // Show loading screen initially
+  loadingScreen.style.display = "flex";
 
-    // Redirect to the main page after 6 seconds
-    setTimeout(function () {
-        window.location.href = "index.html";
-    }, 6000);
+  // Hide loading screen after 6 seconds
+  setTimeout(function () {
+    loadingScreen.style.display = "none";
+    content.style.display = "block";
+  }, 6000);
 });
